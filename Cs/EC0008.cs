@@ -1,14 +1,24 @@
 using System;
 using System.Globalization;
 
-class Programa
+class Program
 {
     static void Main(string[] args)
     {
-        int a = 3;
-        int b = a+1+1;
-        int c = b*3;
-        a = a*2;
-        Console.WriteLine($"El resultado es: {a} {b} {c}");
+        int ca = 0;
+        bool conversionBien = false;
+        do
+        {
+            Console.WriteLine($"Introduzca un numero");
+            string a = Console.ReadLine();
+            conversionBien= int.TryParse(a,out ca);
+        } while (!conversionBien);
+        
+        Console.WriteLine($"Introduzca un numero");
+        int b = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Introduzca un numero");
+        int c = Convert.ToInt32(Console.ReadLine());
+        int resultado = ca+b+c;
+        Console.WriteLine($"El resultado es: {resultado}");
     }
 }

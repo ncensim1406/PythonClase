@@ -24,4 +24,6 @@ class Program
 
         Console.WriteLine($"El primer numero es {numero} y el segundo es {numero2}");
     }
+
+    public static void NuevaFuncion
 }
