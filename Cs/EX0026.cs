@@ -8,7 +8,7 @@ class Program
         Console.WriteLine($"Introduzca un numero: ");
         double a = double.Parse(Console.ReadLine());
 
-        Console.WriteLine($"Primer opcion: {Math.Round(a)}, Segunda opcion {Math.Round(a,2)} , Tercera opcion {Math.Truncate(a)}");
+        Console.WriteLine($"Primer opcion: {Math.Round(a)}, Segunda opcion {Math.Round(a,2)} , Tercera opcion {Math.Truncate(a)}")
         
     }
 }
